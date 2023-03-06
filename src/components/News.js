@@ -55,35 +55,12 @@ export class News extends Component {
 
     this.updateNews();
 
-    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=86a53b1b6558401e8ccc0878de6cae70&page=1&pageSize=${this.props.pageSize}`;
-
-    // this.setState({loading: true});
-    // let data = await fetch(url);
-    // let parseData = await data.json()
-    // console.log(parseData);
-    // this.setState({articles : parseData.articles,
-    //    totalResults : parseData.totalResults,
-    //    loading : false})
   }
 
 
 
   handlePrevClick = async () => {
-    // console.log("Previous");
-
-    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=86a53b1b6558401e8ccc0878de6cae70&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`;
-
-    // this.setState({loading: true});
-    // let data = await fetch(url);
-    // let parseData = await data.json()
-    // console.log(parseData);
-
-    // this.setState({
-    //   page: this.state.page - 1,
-    //   articles : parseData.articles,
-    //   loading : false
-
-    // })
+    
 
     this.setState({ page: this.state.page - 1 })
     this.updateNews();
