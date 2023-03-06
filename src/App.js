@@ -12,6 +12,8 @@ import {
 } from "react-router-dom";
 
 export default class App extends Component {
+
+  // Class Based component code
   pageSize = 5;
   apiKey = process.env.REACT_APP_NEWS_API
 
