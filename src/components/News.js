@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import NewItem from './NewItem'
-import Spinner, { spinner } from './Spinner'
+import Spinner from './Spinner'
 import PropTypes from 'prop-types'
 import InfiniteScroll from "react-infinite-scroll-component";
 
@@ -97,7 +97,7 @@ export class News extends Component {
     return (
       <>
        {/* <div className="container my-3"> */}
-        <h1 className='text-center'>NewsMonkey - Top {this.captilizeFirstLetter(this.props.category)} Headlines</h1>
+        <h1 className='text-center my-3'>NewsMonkey - Top {this.captilizeFirstLetter(this.props.category)} Headlines</h1>
         {this.state.loading && <Spinner />}
 
         <InfiniteScroll
